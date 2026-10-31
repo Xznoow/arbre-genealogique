@@ -1,0 +1,30 @@
+/* arbre-genealogique — feuille de style de depart */
+
+:root{
+  --fond:#f6f5f2;
+  --texte:#1b1b19;
+  --doux:#6e6e68;
+  --trait:#e2e1dc;
+  --accent:#3a5a8c;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;padding:3rem 1.25rem;
+  background:var(--fond);color:var(--texte);
+  font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+  line-height:1.65;
+}
+main{max-width:42rem;margin:0 auto}
+main.centre{min-height:70vh;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;text-align:center}
+h1{font-size:2rem;margin:0 0 .25rem;letter-spacing:-.02em}
+h2{font-size:1rem;color:var(--doux);margin:2.25rem 0 .6rem}
+.sous{color:var(--doux);margin:0 0 1.5rem}
+a{color:var(--accent)}
+ul{padding-left:1.1rem}
+li{margin-bottom:.35rem}
+code{background:#fff;border:1px solid var(--trait);padding:.1rem .35rem;
+  border-radius:4px;font-family:ui-monospace,Consolas,monospace;font-size:.85em}
+pre{background:#fff;border:1px solid var(--trait);border-radius:6px;
+  padding:.7rem .9rem;overflow-x:auto;font-family:ui-monospace,Consolas,monospace;
+  font-size:.8rem}

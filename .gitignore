@@ -1,0 +1,10 @@
+# Outils
+.claude/
+.vscode/
+node_modules/
+
+# Divers
+*.log
+*.bak
+Thumbs.db
+.DS_Store
