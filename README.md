@@ -5,6 +5,8 @@ Aucune inscription, aucun serveur : les données restent sur votre appareil.
 
 > **Version 1** : HTML, CSS et JavaScript, sans framework ni base de données.
 
+**[Voir la démo en ligne](https://xznoow.github.io/arbre-genealogique/)**
+
 ![Capture d'écran](docs/capture.png)
 
 ## Fonctionnalités
