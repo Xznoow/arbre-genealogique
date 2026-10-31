@@ -3,11 +3,32 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>arbre-genealogique</title>
-    <meta name="description" content="">
+    <title>Arbre généalogique</title>
+    <meta name="description" content="Créez votre arbre généalogique simplement, directement dans votre navigateur.">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/family-chart@0.9.0/dist/styles/family-chart.css">
     <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
-    
+<body class="app">
+    <header class="barre">
+        <h1>Arbre généalogique</h1>
+        <div class="actions">
+            <button id="btn-toute-famille" type="button">Afficher toute la famille</button>
+            <button id="btn-exporter" type="button">Exporter (.json)</button>
+            <label class="bouton" for="input-importer">Importer</label>
+            <input id="input-importer" type="file" accept=".json,application/json" hidden>
+            <button id="btn-reinitialiser" type="button" class="danger">Tout effacer</button>
+        </div>
+    </header>
+
+    <p class="avertissement">
+        Vos données restent dans ce navigateur. Pensez à <strong>exporter</strong> régulièrement votre arbre pour ne pas le perdre.
+    </p>
+
+    <main id="arbre" class="f3"></main>
+
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/family-chart@0.9.0"></script>
+
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>
